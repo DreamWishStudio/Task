@@ -1,399 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>card</title>
-    <style>
-  
+<html>
+<header>
+<link rel="stylesheet" href="style.css"> 
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</header>
 
-        body{
-           background: rgb(43, 41, 41);
-           font-family:Arial, Helvetica, sans-serif;
+    <body>
+        <section id="main">
+        <div class="container" >
 
-        }
-        #main{
-            position: relative;
-            top:70px
-        }
-        #Todo{
-            display: flex;
-           justify-content: center;
-           align-items: center;
-            position:absolute;
-            top: 10px;
-            left: calc(.2526 * 5vw);
-        }
-        #Doing{
+            <div class="card1">
+                <h2>To do</h2>
+                <div class="content" id="list-container1">
+
+                <div class="task">
+                    Reading
+                    <span class="material-symbols-outlined">
+                        close
+                        </span>
+                </div>
+                
+                
+                
+            </div>
+            <div class="row">
+                <input type="text"  name="" placeholder="Add your Task." id="input-box1">
+                <button onclick="addtask1()">
+                    Add
+                </button>
+            </div>
+    
+            </div>
+
+
+
+            <div class="card2" >
+                <h2>Doing</h2>
+                <div class="content" id="list-container2">
+
+                <div class="task">
+                    Heading to the gym daily
+                    <span class="material-symbols-outlined">
+                        close
+                        </span>
+                </div>
+               
+            </div>
+            <div class="row">
+                <input type="text"  name="" placeholder="Add your Task." id="input-box2">
+                <button onclick="addtask2()">
+                    Add
+                </button>
+            </div>
+            </div>
+
+
+            <div class="card3">
+                <h2>Done</h2>
+                <div class="content" id="list-container3">
+
+                <div class="task">
+                    Reading
+                    <span class="material-symbols-outlined">
+                        close
+                        </span>
+                </div>
+                
+
+
+            </div>
+
+                <div>
+
+                
+                    <div class="row">
+                        <input type="text"  name="" placeholder="Add your Task." id="input-box3">
+                        <button onclick="addtask3()">
+                            Add
+                        </button>
+                    </div>
+            </div>
+            </div>
            
-           display: flex;
-           justify-content: center;
-           align-items: center;
-            position: relative;
-            
-        }
-
-        #Done{
-            display: flex;
-           justify-content: end;
-           align-items: end;
-            position:absolute;
-            top: 10px;
-            right: calc(.2526 * 5vw);
-        }
-        .card{
-            border-radius:8px;
-            height: calc(.2526 * 150vw);
-            width: calc(.2526 * 100vw);
-            background-color: white;
-            padding:20px;
-            padding-right: 10px;
-            font-weight:600;
-            color:gray;
-            box-shadow:0 0 10px rgba(72, 72, 72, 0.393);
-            overflow-y: scroll;
-            overflow-x:hidden ;
-
-        }
-
-           .tcard{
-            border-radius:8px;
-            height: calc(.2526 * 120vw);
-            width: calc(.2526 * 100vw);
-            background-color: white;
-            padding:20px;
-            padding-right: 10px;
-            font-weight:600;
-            color:gray;
-            box-shadow:0 0 10px rgba(72, 72, 72, 0.519);
-            overflow-y: scroll;
-            overflow-x:hidden ;
-
-        }
-
-        .sub-cards{
-            padding: 20px;
-            background-color:white;
-            border-bottom:3px solid rgb(193, 185, 185);
-            border-radius: 3px;
-            margin-top: 25px;
-            height: 150px;
-            width: 290px;
-            font-family: "Poppins",Times,;  
-            font-size:x-small;
-            color: rgb(255, 255, 255);
-            box-shadow: 0px 0px 30px rgba(128, 128, 128, 0.463);
-            
-                 
-        }
-        .title{
-            background: rgb(255, 0, 179);
-            height: 10px;
-            width: 60px;
-            padding: 3px;
-            border-radius: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            box-shadow:0 0 10px rgb(255, 0, 179);
-
-        }
-        ::-webkit-scrollbar{
-            width:10px;
-          
-          
-           
-        }
-        ::-webkit-scrollbar-track{
-            margin-block: 10px;
-        }
-        ::-webkit-scrollbar-thumb{
-            background: rgb(187, 190, 190);
-            border-radius: 30px;
-            
-        }
-
-        .main-title{
-            position: sticky;
-            top: 0px;
-            background-color: rgb(255, 255, 255);
-            
-        }
-
-        @media screen and (max-width:600px) {
-        #Todo,#Doing,#Done{
-            display: flex;
-           justify-content: center;
-           align-items: center;
-            position: relative;
-            margin-bottom: 3pc;
-        }
-
-        .card{
-            border-radius:8px;
-            height: 450px;
-            width: 350px;
-            background-color: white;
-            padding:20px;
-            padding-right: 10px;
-            font-weight:600;
-            color:gray;
-            box-shadow:0 0 10px rgba(101, 100, 100, 0.32);
-            overflow-y: scroll;
-            overflow-x:hidden ;
-
-        }
-
-        
-        .tcard{
-            border-radius:8px;
-            height: 450px;
-            width: 350px;
-            background-color: white;
-            padding:20px;
-            padding-right: 10px;
-            font-weight:600;
-            color:gray;
-            box-shadow:0 0 10px rgba(98, 97, 97, 0.225);
-            overflow-y: scroll;
-            overflow-x:hidden ;
-
-        }
-      
-       }
-
-
-     
- 
-    </style>
-</head>
-<body>
-<section id="main">
-
-    <section id="Todo">
-        <div class="tcard">
-        <div class="main-title">
-          To do
-        </div>
-            <div class="sub-cards">
-                <div class="title">
-                Gym
-            </div>
-            </div>
-
-            <div class="sub-cards">
-                <div class="title" style="box-shadow:0 0 10px rgb(69, 187, 255);background: rgb(69, 187, 255);">
-                Studies
-                </div>
-            </div>
-
-            <div class="sub-cards">
-                <div class="title">
-                Work
-                </div>
-            </div>
-
-            
-            <div class="sub-cards" >
-                <div class="title" style="box-shadow:0 0 10px rgb(69, 187, 255);background: rgb(69, 187, 255);">
-                College
-                </div>
-            </div>   
-
-            <div class="sub-cards">
-                <div class="title">
-                Work
-                </div>
-            </div>
-
-            
-            <div class="sub-cards" >
-                <div class="title" style="box-shadow:0 0 10px rgb(69, 187, 255);background: rgb(69, 187, 255);">
-                College
-                </div>
-            </div>  
-
-            <div class="sub-cards">
-                <div class="title">
-                Work
-                </div>
-            </div>
-
-            
-            <div class="sub-cards" >
-                <div class="title" style="box-shadow:0 0 10px rgb(69, 187, 255);background: rgb(69, 187, 255);">
-                College
-                </div>
-            </div>  
-
-            <div class="sub-cards">
-                <div class="title">
-                Work
-                </div>
-            </div>
-
-            
-            <div class="sub-cards" >
-                <div class="title" style="box-shadow:0 0 10px rgb(69, 187, 255);background: rgb(69, 187, 255);">
-                College
-                </div>
-            </div>  
-             
-        
-        
-        
-        </div>
+       
     </section>
-
-    <section id="Doing">
-        <div class="card">
-        <div class="main-title">
-            Doing
-        </div>
-            <div class="sub-cards">
-                <div class="title">
-                Gym
-            </div>
-            </div>
-
-            <div class="sub-cards">
-                <div class="title" style="box-shadow:0 0 10px rgb(69, 187, 255);background: rgb(69, 187, 255);">
-                Studies
-                </div>
-            </div>
-
-            <div class="sub-cards">
-                <div class="title">
-                Work
-                </div>
-            </div>
-
-            
-            <div class="sub-cards" >
-                <div class="title" style="box-shadow:0 0 10px rgb(69, 187, 255);background: rgb(69, 187, 255);">
-                College
-                </div>
-            </div>   
-
-            <div class="sub-cards">
-                <div class="title">
-                Work
-                </div>
-            </div>
-
-            
-            <div class="sub-cards" >
-                <div class="title" style="box-shadow:0 0 10px rgb(69, 187, 255);background: rgb(69, 187, 255);">
-                College
-                </div>
-            </div>  
-
-            <div class="sub-cards">
-                <div class="title">
-                Work
-                </div>
-            </div>
-
-            
-            <div class="sub-cards" >
-                <div class="title" style="box-shadow:0 0 10px rgb(69, 187, 255);background: rgb(69, 187, 255);">
-                College
-                </div>
-            </div>  
-
-            <div class="sub-cards">
-                <div class="title">
-                Work
-                </div>
-            </div>
-
-            
-            <div class="sub-cards" >
-                <div class="title" style="box-shadow:0 0 10px rgb(69, 187, 255);background: rgb(69, 187, 255);">
-                College
-                </div>
-            </div>  
-             
-        
-        
-        
-        </div>
-    </section>
-
-    <section id="Done">
-        <div class="tcard">
-        <div class="main-title">
-         Done
-        </div>
-            <div class="sub-cards">
-                <div class="title">
-                Gym
-            </div>
-            </div>
-
-            <div class="sub-cards">
-                <div class="title" style="box-shadow:0 0 10px rgb(69, 187, 255);background: rgb(69, 187, 255);">
-                Studies
-                </div>
-            </div>
-
-            <div class="sub-cards">
-                <div class="title">
-                Work
-                </div>
-            </div>
-
-            
-            <div class="sub-cards" >
-                <div class="title" style="box-shadow:0 0 10px rgb(69, 187, 255);background: rgb(69, 187, 255);">
-                College
-                </div>
-            </div>   
-
-            <div class="sub-cards">
-                <div class="title">
-                Work
-                </div>
-            </div>
-
-            
-            <div class="sub-cards" >
-                <div class="title" style="box-shadow:0 0 10px rgb(69, 187, 255);background: rgb(69, 187, 255);">
-                College
-                </div>
-            </div>  
-
-            <div class="sub-cards">
-                <div class="title">
-                Work
-                </div>
-            </div>
-
-            
-            <div class="sub-cards" >
-                <div class="title" style="box-shadow:0 0 10px rgb(69, 187, 255);background: rgb(69, 187, 255);">
-                College
-                </div>
-            </div>  
-
-            <div class="sub-cards">
-                <div class="title">
-                Work
-                </div>
-            </div>
-
-            
-            <div class="sub-cards" >
-                <div class="title" style="box-shadow:0 0 10px rgb(69, 187, 255);background: rgb(69, 187, 255);">
-                College
-                </div>
-            </div>  
-             
-        
-        
-        
-        </div>
-    </section>
-</section>
-</body>
+    <script src="main.js"></script>
+    </body>
+    
 </html>

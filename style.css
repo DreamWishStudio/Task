@@ -1,0 +1,162 @@
+
+
+:root{
+    --font:rgba(60, 59, 56, 0.622);
+    --Background:rgb(172 212 228 / 52%);
+    --Gradient:linear-gradient(to bottom right,rgba(107, 10, 242, 0.383),rgba(232, 155, 232, 0.74),rgba(0, 238, 255, 0.778));
+    --gray:linear-gradient(to bottom right,#153677,#4e085f)
+}
+
+body{
+    background: var(--Background);
+    overflow: hidden;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 600;
+} 
+
+#main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2{
+    padding: 10px;
+    margin-bottom: 0px;
+  
+}
+
+.container{
+   
+    padding-left: 20px;
+    padding-bottom: 6px; 
+    display: flex;
+}
+
+.card1,.card2,.card3{
+    color: #383535bf;
+    background: var(--Gradient);
+    width: 350px;
+    border-radius: 15px;
+    margin-right: 10px;
+    margin-left: 1%;
+    margin-top: 2%;
+    font-size: medium;
+    font-family:Arial, Helvetica, sans-serif;
+    box-shadow:0 0 20px rgba(114, 111, 111, 0.38);
+}
+
+.card1{
+    height:470px;
+}
+.card2{
+height: 590px;
+}
+.card3{
+    height: 375px;
+}
+
+.card1 > .content{
+    height:355px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 350px;
+}
+.card2 > .content{
+height: 472px;
+overflow-y: scroll;
+overflow-x: hidden;
+width: 350px;
+}
+.card3 > .content{
+    height: 237px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 350px;
+}
+
+.card2  .content  .task span{
+    position: relative;
+    float: right ;
+    top: 20px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    line-height: 40px;
+    text-align: center;
+}
+ 
+.removed {
+    transform: translateX(100vw); /* Translate the element horizontally */
+}
+#second {
+    transition: transform 1s 0s; /* Apply a 1-second transition to the transform property */
+}
+
+
+
+
+.card1 ,.card1 p,.card2 ,.card2 p,.card3 ,.card3 p{
+    padding: 10px;
+    
+ 
+    
+}
+
+
+
+.task{
+    
+    background-color: rgba(255, 255, 255, 0.519);
+    width:315px;
+    height: 100px;
+    margin-left: 9px;
+    border-radius: 10px;
+    margin-bottom: 2%;
+    padding: 10px 0px 0px 10px;
+    color:var(--font) ;
+    border-bottom:3px solid rgb(193, 185, 185);
+    box-shadow:0 0 10px rgba(72, 72, 72, 0.329);
+    }
+
+
+    input{
+        border: 2px solid rgba(255, 255, 255, 0.519);
+        background-color: rgba(255, 255, 255, 0.519);
+        outline: none;
+        border-radius:30px;
+        font-size: larger;
+        width: 15pc;
+    }
+    button{
+        margin: 0px;
+        padding: 10px;
+        position: relative;
+        left: 30px;
+        border: 2px solid rgba(255, 255, 255, 0.519);
+        background-color: rgba(255, 255, 255, 0.519);
+        outline: none;
+        border-radius:100px;
+        font-size: larger;
+      cursor: pointer;
+    }
+
+
+
+    ::-webkit-scrollbar{
+        width:10px;
+        scroll-behavior: smooth;
+      
+       
+    }
+    ::-webkit-scrollbar-track{
+        margin-block: 10px;
+        scroll-behavior: smooth;
+    }
+    ::-webkit-scrollbar-thumb{
+        background:  rgba(255, 255, 255, 0.519);
+        border-radius: 30px;
+        scroll-behavior: smooth;
+    }
+
+

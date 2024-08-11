@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .removed {
+            transform: translateX(100vw); /* Translate the element horizontally */
+        }
+        #second {
+            transition: transform 1s 0s; /* Apply a 1-second transition to the transform property */
+        }
+        .cntnr {
+            overflow-x: hidden; /* Hide horizontal overflow */
+        }
+    </style>
+</head>
+<body>
+    <section class="cntnr">
+        <h2>Geeksforgeeks 1</h2>
+        <h2 id="second">Geeksforgeeks 2</h2>
+        <h2>Geeksforgeeks 3</h2>
+        <button>Remove Second</button>
+    </section>
+
+    <!-- Functionality with JavaScript -->
+    <script>
+        const btn = document.querySelector("button");
+        const secondText = document.querySelector("#second");
+
+        btn.addEventListener("click", () => {
+            secondText.classList.add("removed"); // Add the "removed" class to start the transition
+        });
+
+        secondText.addEventListener("transitionend", () => {
+            secondText.remove(); // Remove the target element after the transition ends
+        });
+    </script>
+</body>
+</html>
