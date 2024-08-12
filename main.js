@@ -8,7 +8,7 @@ const btn = document.querySelector("span");
 
 function addtask1(){
     if(inputbox1.value === ''){
-        alert('write somthing.');
+        alert('write somthing to insert into To Do.');
     }
     else{
         let li = document.createElement("div");
@@ -26,7 +26,7 @@ function addtask1(){
 
 function addtask2(){
     if(inputbox2.value === ''){
-        alert('write somthing.');
+        alert('write somthing to insert into Doing.');
     }
     else{
         let li = document.createElement("div");
@@ -122,6 +122,6 @@ function savedata3(){
 function showdata3(){
     listcontainer3.innerHTML = localStorage.getItem("data3");
 }
-showdata1();
-showdata2();
-showdata3();
+showdata1()
+showdata2()
+showdata3()

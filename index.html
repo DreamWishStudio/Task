@@ -1,11 +1,29 @@
 <!DOCTYPE html>
-<html>
-<header>
+<html lang="en">
+<head>
+    <title>hello</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="style.css"> 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-</header>
+<style>
+     
+
+</style>
+</head>
 
     <body>
+        <nav>
+            <div class="bar">
+               <a href="#" >
+                <span class="material-symbols-outlined">
+                    home_app_logo
+                </span>
+               </a>
+            </div>
+        </nav>
+
+
         <section id="main">
         <div class="container" >
 
@@ -13,18 +31,19 @@
                 <h2>To do</h2>
                 <div class="content" id="list-container1">
 
-                <div class="task">
-                    Reading
-                    <span class="material-symbols-outlined">
-                        close
-                        </span>
-                </div>
+                    <div class="task">
+                        Studying early in the morning.
+                        <span class="material-symbols-outlined">
+                            close
+                            </span>
+                    </div>
                 
                 
                 
             </div>
+            <br>
             <div class="row">
-                <input type="text"  name="" placeholder="Add your Task." id="input-box1">
+                <input type="text"  name="" placeholder="   Add your Task." id="input-box1">
                 <button onclick="addtask1()">
                     Add
                 </button>
@@ -46,8 +65,9 @@
                 </div>
                
             </div>
+            <br>
             <div class="row">
-                <input type="text"  name="" placeholder="Add your Task." id="input-box2">
+                <input type="text"  name="" placeholder="    Add your Task." id="input-box2">
                 <button onclick="addtask2()">
                     Add
                 </button>
@@ -72,9 +92,9 @@
 
                 <div>
 
-                
+                <br>
                     <div class="row">
-                        <input type="text"  name="" placeholder="Add your Task." id="input-box3">
+                        <input type="text"  name="" placeholder="    Add your Task." id="input-box3">
                         <button onclick="addtask3()">
                             Add
                         </button>
@@ -82,7 +102,7 @@
             </div>
             </div>
            
-       
+        </div>
     </section>
     <script src="main.js"></script>
     </body>
