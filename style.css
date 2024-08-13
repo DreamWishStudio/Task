@@ -1,0 +1,383 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    }
+
+body{
+    background-color: rgba(112, 106, 220, 0.567);
+    color: #000000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+} 
+html{
+    scroll-behavior: smooth;
+}
+.nav{
+    margin-top: 20px;
+    font-size: 20px;
+    margin-left: 40%; 
+    width: 600px;
+    
+}  
+ 
+.nav li{
+    
+    display: inline;
+}
+.container img{
+    padding-top: 10px;
+    width: 150px;
+}
+.nav a{
+    padding-right: 40px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.container{
+   
+    padding-left: 20px;
+    padding-bottom: 6px;
+    background-color:rgba(210, 206, 206, 0.42);
+    display: flex;
+}
+.container input{
+    margin-left: 40%;
+    border-radius: 10px;
+    margin-top: 5px;
+    width: 400px;
+    height: 35px;
+    padding-left: 20px;
+    outline: none;
+    border: none;
+}
+.container1{
+   
+    height: 600px;
+   background-color: (173, 170, 235);
+}
+
+
+::-webkit-scrollbar{
+    width:10px;
+    scroll-behavior: smooth;
+  
+   
+}
+::-webkit-scrollbar-track{
+    margin-block: 10px;
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar-thumb{
+    background: rgba(59, 56, 56, 0.381);;
+    border-radius: 30px;
+    scroll-behavior: smooth;
+    padding: 10px;
+}
+
+.container1 h1{
+    padding-top: 100px;
+    text-align: center;
+    font-size: 65px;
+    font-weight: 100;
+    color: #fff;
+    
+}
+
+.container1 button{
+    padding: 15px;
+    border-radius: 25px;
+    margin-left: 20px;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    color: rgb(255, 255, 255);
+     background-color:  rgba(112, 106, 220, 0.567);
+
+}
+.container1 button:hover{
+    background-color:  rgba(122, 117, 230, 0.567);
+}
+.container1 input{
+    height: 40px;
+    width: 400px;
+    border-radius: 20px;
+    padding-left: 3px;
+    margin-top: 50px;
+    margin-left: 30%;
+    outline: none;
+    border: none;
+    transition: 1s;
+}
+.container1 input:focus{
+   
+    border-radius: 8px;
+    transition: 1s;
+}
+
+.container1 p{
+    font-size: 20px;
+    text-align: center;
+    padding-top: 30px;
+}
+.container1 span,button{
+    color: #0d253c;
+    font-weight:400;
+}
+.container1 span,button:hover{
+   cursor: pointer;
+}
+
+.container2{
+    margin-top: 0%;
+    color: rgba(0, 0, 0);
+    display: flex;
+}
+.tot{
+    background-color: rgba(112, 106, 220, 0.567);
+    padding-bottom: 5%;
+    padding-top: 2%;
+    color: rgba(0, 0, 0);
+}
+aside{
+    width: 100px;
+    height:660px;
+    margin-right: 5%;
+    margin-top: 0%;
+    background-color:rgba(112, 106, 220, 0.567);
+}
+
+.card1,.card2,.card3{
+    color: rgba(0, 0, 0);
+    background-color:  rgba(112, 106, 220, 0.567);
+    width: 350px;
+    height:max-content;
+    border-radius: 10px;
+    margin-right: 0px;
+    margin-left: 1%;
+    margin-top: 2%;
+}
+ 
+
+
+.card1 h2,.card1 p,.card2 h2,.card2 p,.card3 h2,.card3 p{
+    padding: 9px;
+    color: #000000;
+    
+}
+
+.task{
+    background-color: #c26b6b;
+    width:330px;
+    height: 100px;
+    margin-left: 9px;
+    border-radius: 10px;
+    margin-bottom: 2%;
+    }
+
+.task h2{
+    padding-left: 5px;
+    font-weight: 300;
+    font-size: 20px;
+}    
+.container3{
+    margin-left: 10%;
+    display: flex;
+}
+
+.ben{
+    margin-left: 0%;
+    width: 400px;
+}
+.container4{
+    display: block;
+}
+#about{
+    margin-left: 10%;
+    margin-bottom: 20px;
+}
+.ben img{
+    margin-left: 40px;
+    width: 200px;
+    height: 200px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.container5{
+    
+    color: #000000;
+    margin-top: 20px;
+    display: flex;
+}
+.container5 img{
+    margin-top: 10%;
+    margin-left: 50px;
+    margin-bottom: 10%;
+    width: 400px;
+    height: 500px;
+}
+
+.container5 h2{
+    font-size: 40px;
+}
+
+.sm{
+    margin-left: 5%;
+    margin-right: 10%;
+    margin-top: 5%;
+}
+
+.sm h2{
+    padding-bottom: 20px;
+    font-size: 55px;
+    font-weight:200 ;
+    
+}
+.sm h6,h6{
+
+    width:max-content;
+    margin-top: 2%;
+    padding: 5px 6px 5px 6px;
+    font-size: 20px;
+    font-weight:200 ;
+    background-color: rgba(112, 106, 220, 0.567);
+    box-shadow: -5px -5px 8px rgba(94, 104, 121, 0.288),
+            4px 4px 6px rgba(94, 104, 121, 0.288);
+    border-radius: 20px;
+}
+    
+.sm h6:hover{
+    cursor: pointer;
+   background-color: #9991de;
+   color: white;
+}
+.main{
+    background-color: rgba(210, 206, 206, 0.42);
+}
+
+.rew{
+    margin-bottom: 5%;
+   display: flex;
+}
+
+.user{
+    width: 400px;
+    margin-left: 2%;
+    height: 180px;
+    border-radius: 20px;
+    color: rgba(0, 0, 0);
+    background-color: rgba(112, 106, 220, 0.567);
+    box-shadow: -5px -5px 8px rgba(94, 104, 121, 0.288),
+            4px 4px 6px rgba(94, 104, 121, 0.288);
+}
+.user h3{
+    padding-top: 20px;
+    padding-left: 10px;
+    color: rgba(0, 0, 0);
+    font-size: 20px;
+    font-weight: 100;
+}
+.user h5{
+    padding-top: 10px;
+    padding-left: 200px;
+    color: #ffffff;
+}
+
+hr{
+    color: rgba(0, 0, 0);
+}
+
+.end{
+    background-color: rgba(210, 206, 206, 0.42);
+    padding-top: 5%;
+    display: flex;
+    padding-left: 12%;
+    padding-right: 10%;
+}
+.end img{
+    height: 70px;
+    margin-bottom: 5%;
+}
+.outro{
+    padding-left: 4%;
+ 
+   
+}
+.outro p{
+    padding-bottom: 20px;
+}
+.outro h2{
+    padding-bottom: 30%;
+    font-weight: 100;
+    font-size: 30px;
+}
+.outro p:hover{
+    cursor: pointer;
+   
+    border-radius: 10px;
+
+    
+}
+a{
+    text-decoration: none;
+    color: rgba(0, 0, 0);
+}
+.fa-x-twitter,.fa-facebook-f,.fa-instagram,.fa-youtube{
+   
+    margin-left: 100px;
+    font-size: 20px;
+    padding-top: 20px;
+    margin-bottom: 30px;
+}
+
+.fa-x-twitter,.fa-facebook-f,.fa-instagram,.fa-youtube:hover{
+cursor: pointer;
+
+}
+
+img{
+    border-radius: 20px;
+}
+
+a{
+    color: #fff;
+    padding: 13px;
+  
+ 
+}
+
+#login{
+    box-shadow: -5px -5px 8px rgba(94, 104, 121, 0.288),
+            4px 4px 6px rgba(94, 104, 121, 0.288);
+}
+
+input{
+    box-shadow: -5px -5px 8px rgba(94, 104, 121, 0.288),
+            4px 4px 6px rgba(94, 104, 121, 0.288);
+}
+
+@media only screen and (max-width: 600px) {
+
+    .container input{
+        margin-left: 40%;
+        border-radius: 10px;
+        margin-top: 5px;
+        width: 10px;
+        height: 35px;
+        padding-left: 20px;
+        outline: none;
+        border: none;
+    }
+
+    .container1 input{
+        height: 40px;
+        width: 220px;
+        border-radius: 20px;
+        padding-left: 3px;
+        margin-top: 50px;
+        margin-left: 30%;
+        outline: none;
+        border: none;
+        transition: 1s;
+    }
+
+}
