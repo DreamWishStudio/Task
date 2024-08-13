@@ -1,0 +1,423 @@
+
+
+:root{
+    --font:rgba(60, 59, 56, 0.622);
+    --Background:rgba(112, 106, 220, 0.567);
+    --Gradient:linear-gradient(to bottom right,rgba(107, 10, 242, 0.383),rgba(232, 155, 232, 0.74),rgba(0, 238, 255, 0.778));
+    --gray:rgba(59, 56, 56, 0.381);
+    --card:rgba(210, 206, 206, 0.42);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body{
+    background: var(--Background);
+   overflow-x: hidden;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 600;
+} 
+
+#main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bar{
+    background-color: var(--card);
+    padding: 10px;
+    width: 100%;
+    box-shadow: 0 0 20px var(--gray);
+}
+.bar a > span{
+
+ font-size: xx-large;
+}
+
+.bar a{
+    color: var(--font);
+}
+
+.bar > ul{
+    float:inline-end;
+    margin-right: 40px;
+    margin-top: 8px;
+}
+
+.bar > ul > li{
+    display: inline;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.bar >ul >li>a{
+    text-decoration: none;
+}
+
+h2{
+    padding: 10px;
+    margin-bottom: 0px;
+  
+}
+
+.container{
+   
+    padding-left: 20px;
+    padding-bottom: 6px; 
+    display: flex;
+}
+
+.card1,.card2,.card3{
+    color: #383535bf;
+    background: rgba(210, 206, 206, 0.42);
+    width: 350px;
+    border-radius: 15px;
+    margin-right: 10px;
+    margin-left: 1%;
+    margin-top: 2%;
+    font-size: medium;
+    font-family:Arial, Helvetica, sans-serif;
+    box-shadow:var(--card);
+}
+
+.card1{
+    height:470px;
+}
+.card2{
+height: 590px;
+}
+.card3{
+    height: 375px;
+}
+
+.card1 > .content{
+    height:355px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 350px;
+}
+.card2 > .content{
+height: 472px;
+overflow-y: scroll;
+overflow-x: hidden;
+width: 350px;
+}
+.card3 > .content{
+    height: 237px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 350px;
+}
+
+.card1  .content  .task span{
+    
+    position: sticky;
+    float: right ;
+    top: 20px;
+    width: 39px;
+    height: 39px;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.card2  .content  .task span{
+    position: sticky;
+    float: right ;
+    top: 20px;
+    width: 39px;
+    height: 39px;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.card3  .content  .task span{
+    position: sticky;
+    float: right ;
+    top: 20px;
+    width: 39px;
+    height: 39px;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+
+
+
+.card1 ,.card2,.card3{
+    padding: 10px;
+}
+
+
+
+.task{
+    
+    background-color: rgba(255, 255, 255, 0.562);
+    width:315px;
+    height: 100px;
+    margin-left: 9px;
+    margin-right: 9px;
+    border-radius: 10px;
+    margin-bottom: 2%;
+    padding: 10px 0px 0px 10px;
+    color:var(--font) ;
+    border-bottom:3px solid rgb(193, 185, 185);
+    border-right:3px solid rgb(193, 185, 185);
+    box-shadow:0 0 10px rgba(18, 18, 18, 0.37);
+    }
+
+
+    input{
+        border: 2px solid var(--gray);
+        outline: none;
+        border-radius:30px;
+        font-size: larger;
+        width: 15pc;
+        height: 35px;
+        background-color:rgba(255, 255, 255, 0.519);
+        transition: 1s;
+    }
+ 
+    button{
+        margin: 0px;
+        padding: 10px;
+        position: relative;
+        left: 30px;
+        border: 2px solid var(--gray);
+        background-color:rgba(255, 255, 255, 0.519);
+        outline: none;
+        border-radius:100px;
+        font-size: larger;
+        cursor: pointer;
+        
+    }
+
+    ::-webkit-scrollbar{
+        width:10px;
+        scroll-behavior: smooth;
+      
+       
+    }
+    ::-webkit-scrollbar-track{
+        margin-block: 10px;
+        scroll-behavior: smooth;
+    }
+    ::-webkit-scrollbar-thumb{
+        background: var(--gray) ;
+        border-radius: 30px;
+        scroll-behavior: smooth;
+        padding: 10px;
+    }
+
+    @media only screen and (max-width: 600px) {
+        body{
+            overflow: hidden;
+        }
+        #main{
+            display: block;
+            
+        }
+        .container{
+            
+            display: block;
+            overflow: hidden;
+            margin-left:10px;
+            padding: 0;
+        }
+        body{
+            overflow: visible;
+        }
+        .card1,.card2,.card3{
+            margin-bottom: 20px;
+        }
+
+        .card1,.card2,.card3{
+            color: #383535bf;
+            background: rgba(210, 206, 206, 0.42);
+            width: 300px;
+            border-radius: 15px;
+            margin-right: 10px;
+            margin-left: 1%;
+            margin-top: 2%;
+            font-size: medium;
+            font-family:Arial, Helvetica, sans-serif;
+            box-shadow: -5px -5px 8px rgba(94, 104, 121, 0.288),
+            4px 4px 6px rgba(94, 104, 121, 0.288);
+        }
+
+        input{
+            border: 2px solid var(--gray);
+            outline: none;
+            border-radius:30px;
+            font-size: larger;
+            width: 12pc;
+            height: 35px;
+            background-color:rgba(255, 255, 255, 0.519);
+            transition: 1s;
+        }
+     
+        button{
+            margin: 0px;
+            padding: 10px;
+            position: relative;
+            left: 30px;
+            border: 2px solid var(--gray);
+            background-color:rgba(255, 255, 255, 0.519);
+            outline: none;
+            border-radius:100px;
+            font-size: larger;
+            cursor: pointer;
+            
+        }
+
+        .task{
+    
+            background-color: rgba(255, 255, 255, 0.562);
+            width:270px;
+            height: 100px;
+            margin-left: 9px;
+            margin-right: 9px;
+            border-radius: 10px;
+            margin-bottom: 2%;
+            padding: 10px 0px 0px 10px;
+            color:var(--font) ;
+            border-bottom:3px solid rgb(193, 185, 185);
+            border-right:3px solid rgb(193, 185, 185);
+            box-shadow:0 0 10px rgba(18, 18, 18, 0.37);
+            }
+            ::-webkit-scrollbar{
+                display: none;
+              
+               
+            }
+            ::-webkit-scrollbar-track{
+                display: none;
+            }
+            ::-webkit-scrollbar-thumb{
+                display: none;
+            }
+
+            .pro {
+             
+                margin-top: 50%;
+                
+               
+            }
+            .progress-circle {
+                width: 130px;
+                height: 130px;
+                border-radius: 50%;
+                background: conic-gradient(rgba(255, 255, 255)3.5deg);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                font-family: Arial, sans-serif;
+                font-size: 24px;
+                color: #5b5f5b;
+                margin-left: 6%;
+                margin-top: 1%;
+                box-shadow: 0 0 10px var(--gray);
+               
+            }
+
+          }
+
+    @media only screen and (max-width: 760px) {
+        #main{
+            display: block;
+        }
+        
+        .container{
+            
+                display: block;
+                overflow: hidden;
+                margin-left:10px;
+                padding: 0;
+            }
+       
+        .card1,.card2,.card3{
+            margin-bottom: 20px;
+        }
+        #main{
+            display: block;
+        }
+    
+        
+    }
+
+
+          
+
+
+/*Progression bar
+ */
+
+ .min{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    background-color: white;
+}
+
+.pro{
+    background-color: var(--card);
+    width:  20pc;
+    height:  12pc;
+    border-radius: 20px;
+    padding: 2px 5px 5px 8px;
+   position: relative;
+  top: -190px;
+   
+ 
+}
+
+ .pro{
+    margin-right: 8%;
+    margin-left: 3%;
+    
+}
+
+.progress-circle {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: conic-gradient(rgba(255, 255, 255)3.5deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    color: #5b5f5b;
+    margin-left: 6%;
+    margin-top: 5%;
+    box-shadow: 0 0 10px var(--gray);
+   
+}
+
+
+#progress-value {
+    position: absolute;
+}
+h2{
+   
+    color: var(--font);
+    width:max-content;
+    
+    padding: 2px;
+    border-radius: 3px;
+    margin-top: 5%;
+}

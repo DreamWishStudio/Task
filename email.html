@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</head>
+<body>
+    <form id="submit" action="#">
+        <input type="text" id="fname" placeholder="Enter First Name...">
+        <input type="text" id="lname" placeholder="Enter Last Name...">
+        <input type="submit" value="Send">
+    </form>
+
+    
+    
+    <script >
+        const fname = document.getElementById('fname');
+const lname = document.getElementById('lname');
+const submit = document.getElementById('submit');
+
+submit.addEventListener('submit',(e)=>{
+    e.preventDefault();
+    let ebody = `
+    <h1>First Name: </h1>${fname.value}
+    <br>
+    <h1>Last Name: </h1>${lname.value}
+    `;
+
+    Email.send({
+        Host:"smtp.gmail.com",
+        Username:"work.as.team24@gmail.com",
+        Password:"Hari@2024",
+        To : 'Dream.Wish.Studio.Anime2024', 
+        From : "parukrish.darshan20@gmail.com",
+        Subject : "This is the subject",
+        Body : ebody
+    }).then(
+      message => alert(message)
+    );
+});
+    </script>
+</body>
+</html>
